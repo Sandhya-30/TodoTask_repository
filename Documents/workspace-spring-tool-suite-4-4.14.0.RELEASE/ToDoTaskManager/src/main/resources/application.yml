@@ -1,0 +1,10 @@
+server:
+  port: 9098
+ 
+spring:
+  application:
+    name: Task-service
+ 
+eureka:
+  instance:
+    hostname: localhost

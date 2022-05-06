@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>TaskDetails</title>
+</head>
+<body>
+<form action="#" th:action="@{/taskdetails}" th:object="${taskdetails}" method="post">
+            <table border="0" cellpadding="10" align="center">
+                <tr>             
+                    <td>Task ID:</td>
+                    <td><input class="form-control" type="number" th:field="*{taskId}" readonly="readonly" /></td>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td><input class="form-control" type="text" th:field="*{name}" readonly="readonly" /></td>
+                </tr> 
+                <tr>
+                    <td>Phone:</td>
+                    <td><input class="form-control" type="number" th:field="*{phone}" readonly="readonly" /></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input class="form-control" type="text" th:field="*{email}" readonly="readonly" /></td>
+                </tr>
+            </table>
+        </form>
+</body>
+</html>
